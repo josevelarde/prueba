@@ -1,22 +1,22 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-int main(void) 
+int main(void)
 {
 int a,b,c=0,d,i,op;
 double t=clock();
 
 do {
 	int np=0,na=0;
-	printf("\n1._¿Quieres hacer una operacion?\n2._Salir\n");
+	printf("\n1._¿hacer una operacion?\n2._Salir\n");
 	scanf("%d",&op);
 	switch(op)
 	{
 	case 1:
 	{
-		printf("Ingresar numero: ");
+		printf("Ingresar numero A: ");
 		scanf("%d",&a);
-		printf("Ingresar numero: ");
+		printf("Ingresar numero B: ");
 		scanf("%d",&b);
 		t=clock();
 		if(a==0||b==0)
@@ -27,7 +27,7 @@ do {
 			while(d!=0)
 			{
 				if(a>b){
-					
+
 				}
 				else
 					{
@@ -51,7 +51,7 @@ do {
 					a=b;
 					b=d;
 					}
-			}		
+			}
 			t=(clock()-t)/1000;
 			printf("\nTiempo transcurrido para completar el programa:%.2f segundos\n",t);
 			printf("\nNumero de asignaciones:%d \n",na);
@@ -62,10 +62,10 @@ do {
 			   printf("FIN DEL PROGRAMA");
 		    break;
 				default:
-			       printf("Elejir una opcion");
-			    }	
+			       printf("Elejir una opcion del menu");
+			    }
 		    }
 	    d=1;
 	}while(op!=2);
-    
-} 
+
+}
